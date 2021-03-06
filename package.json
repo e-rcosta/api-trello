@@ -1,0 +1,35 @@
+{
+  "name": "teste-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run -- --spec **/*.feature",
+    "lint": "eslint cypress/support/** --fix"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps",
+    "nonGlobalStepDefinitions": false
+  },
+  "keywords": [],
+  "author": "Rosangela Fernandes da Costa",
+  "license": "ISC",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "cypress": "^6.4.0",
+    "faker": "^5.3.1"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^2.5.5",
+    "cypress-multi-reporters": "^1.4.0",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.3.0",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}

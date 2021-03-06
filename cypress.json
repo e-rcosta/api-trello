@@ -1,0 +1,12 @@
+{
+    "baseURL": "https://api.trello.com/1",
+    "testFiles": "**/*.feature",
+    "reporter":"mochawesome",
+    "reporterOptions":{
+        "reportdir":"cypress/report/mochawesome-report",
+        "overwrite":false,
+        "html":true,
+        "json": false,
+        "timestamp":"mmddyyyy_HHMMss" 
+    }
+}
