@@ -1,4 +1,3 @@
-import BoardController from '../../controller/BoardController';
 import CardController from '../../controller/cardController';
 
 const card = new CardController();

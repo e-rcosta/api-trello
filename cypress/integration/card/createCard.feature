@@ -8,7 +8,7 @@ Contexto:
   Dado que Rosangela acessa o trello
 
 Cenário: Criar um cartão válido com autenticação válida
-  Quando Rosangela solicitar criar um novo cartão com nome "Novo cartão com autenticação válida"
+  Quando Rosangela solicitar criar um novo cartão com nome "Novo cartão" e autenticação válida
   Então será retornado o status 200
   E os dados do cartão serão exibidos
   E exclui as sujeiras
@@ -18,9 +18,9 @@ Cenário: Criar um cartão válido com autenticação invalida
   Então será retornado o status 401
 
 Cenário: Criar um cartão inválido com autenticação valida
-  Quando Rosangela solicitar criar um cartão com uma lista inválida
+  Quando Rosangela solicitar criar um cartão com uma lista inválida e autenticação valida
   Então será retornado o status 400
 
 Cenário: Criar um cartão inválido com autenticação inválida
-  Quando Rosangela solicitar criar um cartão com uma lista e autenticação inválida
+  Quando Rosangela solicitar criar um cartão com uma lista inválida e autenticação inválida
   Então será retornado o status 401

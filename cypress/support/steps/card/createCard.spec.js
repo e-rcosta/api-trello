@@ -10,7 +10,7 @@ before(() => {
 
 Given('que Rosangela acessa o trello', () => { });
 
-When('Rosangela solicitar criar um novo cartão com nome {string}', (nameCard) => {
+When('Rosangela solicitar criar um novo cartão com nome {string} e autenticação válida', (nameCard) => {
   card.createCard(nameCard, Cypress.env('idList'), true, true)
     .then((res) => { }).as('resCard');
 });
@@ -20,12 +20,12 @@ When('Rosangela solicitar criar um novo cartão com nome {string} e autenticaç�
     .then((res) => { }).as('resCard');
 });
 
-When('Rosangela solicitar criar um cartão com uma lista inválida', (nameCard) => {
-  card.createCard(nameCard, Cypress.env('idList'), true, false)
+When('Rosangela solicitar criar um cartão com uma lista inválida e autenticação valida', () => {
+  card.createCard('teste-API-card', Cypress.env('idList'), true, false)
     .then((res) => { }).as('resCard');
 });
 
-When('Rosangela solicitar criar um cartão com uma lista e autenticação inválida', () => {
+When('Rosangela solicitar criar um cartão com uma lista inválida e autenticação inválida', () => {
   card.createCard('teste-API-card', Cypress.env('idList'), false, false)
     .then((res) => { }).as('resCard');
 });
