@@ -1,50 +1,46 @@
-# user-api
+# api-trello
 
-API automation project with Cypress + Cucumber
+Projeto de automação de API com Cypress + Cucumber
 
-Download the project on GitHub
+Baixe o projeto do GitHub
 
-	* https://github.com/e-rcosta/user-api
+* https://github.com/e-rcosta/api-trello
 
-Step by step to run the tests:
+Passo a passo para executar os testes:
 
-	1 - Install node.js
-		
-		* Access the website below:
-		
-			https://nodejs.org/en/download/
-		
-		* Download the Node.js source code or a pre-built installer for your platform
+1 - Instale o node.js
 
-	2 - Access the user-api directory and install the dependencies
+* Acesse o site abaixo:
 
-		* Through the terminal
+https://nodejs.org/en/download/
 
-		* Access to the project directory: user-api
+* Baixe o código-fonte do Node.js ou um instalador pré-construído para sua plataforma
 
-		* Install as dependencies: npm i
+2 - Acesse o diretório api-trello e instale as dependências
 
-	3 - Run the tests
+* Através do terminal
 
-		* Access the project directory
+* Acesso ao diretório do projeto: api-trello
 
-		* Through the Cypress IDE
-			
-			command: npm run cypress: open
+* Instale as dependências com comando: npm i
 
-		* Through command line
-			
-			command: npm run cypress: run
+3 - Execute os testes
 
-	4 - View reports
+* Acesse o diretório do projeto
 
-		* When tests are generated from the command line, it will be generated from the test reports in the mochawesome report.
+* Por meio do IDE Cypress
 
-		* Access the mochawesome-report directory
+comando: npm run cypress:open
 
-		* Open html files through the browser
+* Através da linha de comando
 
-Mind Maps
+comando: npm run cypress:run
 
-	See the mind map (mindMaps.pdf) in the file folder.
-	
+4 - Ver relatórios
+
+* Quando os testes são executados a partir da linha de comando, serão gerados relatórios de teste no diretório mochawesome-report.
+
+* Acesse o diretório mochawesome-report
+
+* Abra arquivos html através do navegador
+
